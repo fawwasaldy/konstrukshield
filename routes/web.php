@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AnalyzeController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProductController;
@@ -29,5 +30,12 @@ Route::post('/cart/update', [CartController::class, 'update'])
 Route::delete('/cart/clear', [CartController::class, 'clear'])
     ->middleware(['auth', 'verified'])
     ->name('cart.clear');
+
+Route::get('/analyze', [AnalyzeController::class, 'index'])
+    ->middleware(['auth', 'verified'])
+    ->name('analyze');
+Route::post('/analyze/result', [AnalyzeController::class, 'result'])
+    ->middleware(['auth', 'verified'])
+    ->name('analyze.result');
 
 require __DIR__.'/auth.php';

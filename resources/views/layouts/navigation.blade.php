@@ -16,6 +16,13 @@
                         {{ __('Products') }}
                     </x-nav-link>
                 </div>
+                @auth
+                    <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                        <x-nav-link :href="route('analyze')" :active="request()->routeIs('analyze')">
+                            {{ __('Analyze') }}
+                        </x-nav-link>
+                    </div>
+                @endauth
             </div>
 
             <!-- Right Side Links -->
