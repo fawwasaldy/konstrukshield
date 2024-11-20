@@ -14,18 +14,40 @@
 
             <!-- Product Info -->
             <div class="w-full md:w-1/2 px-4">
-                <p class="text-gray-500 mb-2">{{ $product->category }}</p>
-                <p class="text-2xl font-semibold text-orange-500 mb-4">${{ $product->price }}</p>
+                <p class="text-gray-500 mb-2">Category: {{ $product->category }}</p>
+                <p class="text-2xl font-semibold text-orange-500 mb-4">Price: ${{ $product->price }}</p>
                 @if($product->discount > 0)
-                    <p class="text-sm text-gray-500 line-through mb-4">${{ $product->original_price }}</p>
+                    <p class="text-sm text-gray-500 line-through mb-4">Original Price: ${{ $product->price / (1 - $product->discount / 100) }}</p>
+                    <p class="text-green-600 font-bold mb-4">Discount: {{ $product->discount }}%</p>
                 @endif
-                <p class="mb-6">{{ $product->description }}</p>
-                <form id="add-to-cart-form-{{ $product->id }}" action="/cart" method="POST" class="mt-4">
+                <p class="text-gray-500 mb-4">Rating: {{ $product->rating }} / 5</p>
+                <p class="mb-6">Description: {{ $product->description }}</p>
+                <form id="update-cart-form-{{ $product->id }}" action="{{ route('cart.update') }}" method="POST" class="mt-4 flex items-center">
                     @csrf
                     <input type="hidden" name="product_id" value="{{ $product->id }}">
-                    <button type="button" class="w-full bg-green-500 text-white rounded py-3 hover:bg-green-600 transition duration-200" onclick="addToCart({{ $product->id }})">Add to Cart</button>
+                    <input type="hidden" id="quantity-{{ $product->id }}" name="quantity" value="{{ $cartQuantity ?? 1 }}">
+                    <button type="button" class="bg-red-500 text-white rounded py-2 px-4 hover:bg-red-600 transition duration-200" onclick="updateQuantity({{ $product->id }}, 'decrease')">-</button>
+                    <span id="display-quantity-{{ $product->id }}" class="mx-4">{{ $cartQuantity ?? 1 }}</span>
+                    <button type="button" class="bg-green-500 text-white rounded py-2 px-4 hover:bg-green-600 transition duration-200" onclick="updateQuantity({{ $product->id }}, 'increase')">+</button>
+                    <button type="submit" class="bg-blue-500 text-white rounded py-2 px-4 ml-4 hover:bg-blue-600 transition duration-200">Add to Cart</button>
                 </form>
             </div>
         </div>
     </div>
+    <script>
+        function updateQuantity(productId, action) {
+            const quantityInput = document.getElementById(`quantity-${productId}`);
+            const displayQuantity = document.getElementById(`display-quantity-${productId}`);
+            let quantity = parseInt(quantityInput.value);
+
+            if (action === 'increase') {
+                quantity++;
+            } else if (action === 'decrease' && quantity > 0) {
+                quantity--;
+            }
+
+            quantityInput.value = quantity;
+            displayQuantity.textContent = quantity;
+        }
+    </script>
 </x-app-layout>

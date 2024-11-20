@@ -60,9 +60,9 @@ class AnalyzeController extends Controller
             $link = route('products', ['category' => 'helmet']);
         } else {
             $message = 'Sepertinya kamu membutuhkan helmet dan vest';
-            $link = route('products', ['category' => 'helmet,vest']);
+            $link = route('products');
         }
 
-        return view('analyze.result', compact('decodedImagePath', 'predictions', 'message', 'link'));
+        return view('analyze.result', compact('decodedImagePath', 'predictions', 'message', 'link', 'personCount', 'helmetCount', 'vestCount'));
     }
 }

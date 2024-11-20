@@ -10,27 +10,23 @@
             <table class="table-auto w-full">
                 <thead>
                 <tr>
-                    <th class="px-4 py-2">Class ID</th>
-                    <th class="px-4 py-2">Class Name</th>
-                    <th class="px-4 py-2">Confidence</th>
-                    <th class="px-4 py-2">XMin</th>
-                    <th class="px-4 py-2">XMax</th>
-                    <th class="px-4 py-2">YMin</th>
-                    <th class="px-4 py-2">YMax</th>
+                    <th class="px-4 py-2">Category</th>
+                    <th class="px-4 py-2">Count</th>
                 </tr>
                 </thead>
                 <tbody>
-                @foreach ($predictions as $prediction)
-                    <tr>
-                        <td class="border px-4 py-2">{{ $prediction['class_id'] }}</td>
-                        <td class="border px-4 py-2">{{ $prediction['class_name'] }}</td>
-                        <td class="border px-4 py-2">{{ $prediction['confidence'] }}</td>
-                        <td class="border px-4 py-2">{{ $prediction['xmin'] }}</td>
-                        <td class="border px-4 py-2">{{ $prediction['xmax'] }}</td>
-                        <td class="border px-4 py-2">{{ $prediction['ymin'] }}</td>
-                        <td class="border px-4 py-2">{{ $prediction['ymax'] }}</td>
-                    </tr>
-                @endforeach
+                <tr>
+                    <td class="border px-4 py-2">Person</td>
+                    <td class="border px-4 py-2">{{ $personCount }}</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">Helmet</td>
+                    <td class="border px-4 py-2">{{ $helmetCount }}</td>
+                </tr>
+                <tr>
+                    <td class="border px-4 py-2">Vest</td>
+                    <td class="border px-4 py-2">{{ $vestCount }}</td>
+                </tr>
                 </tbody>
             </table>
         </div>
@@ -38,7 +34,7 @@
             <h2 class="text-2xl font-bold mb-2">Message</h2>
             <p>{{ $message }}</p>
             @if ($link)
-                <a href="{{ $link }}" class="text-blue-500 underline">Go to Products</a>
+                <a href="{{ $link }}" class="bg-blue-500 text-white px-4 py-2 mt-2 block text-center rounded">Go to Products</a>
             @endif
         </div>
     </div>

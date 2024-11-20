@@ -11,7 +11,7 @@
                     <p id="image-placeholder" class="text-gray-500">Click to upload an image</p>
                 </div>
             </div>
-            <div class="mb-4">
+            <div class="mb-4 flex justify-center">
                 <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Analyze</button>
             </div>
         </form>

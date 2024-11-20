@@ -9,7 +9,7 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        $featuredProducts = Product::take(3)->get();
+        $featuredProducts = Product::orderBy('rating', 'desc')->take(3)->get();
         return view('dashboard', compact('featuredProducts'));
     }
 }

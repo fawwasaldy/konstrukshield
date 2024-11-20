@@ -17,4 +17,9 @@ class Cart extends Model
         'product_id' => 'integer',
         'quantity' => 'integer',
     ];
+
+    public function product()
+    {
+        return $this->belongsTo(Product::class);
+    }
 }

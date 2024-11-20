@@ -25,4 +25,9 @@ class Product extends Model
         'discount' => 'float',
         'rating' => 'float',
     ];
+
+    public function getDiscountedPriceAttribute()
+    {
+        return $this->price * (1 - $this->discount / 100);
+    }
 }

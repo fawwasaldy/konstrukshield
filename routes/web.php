@@ -30,6 +30,15 @@ Route::post('/cart/update', [CartController::class, 'update'])
 Route::delete('/cart/clear', [CartController::class, 'clear'])
     ->middleware(['auth', 'verified'])
     ->name('cart.clear');
+Route::post('/cart/increase', [CartController::class, 'increase'])
+    ->middleware(['auth', 'verified'])
+    ->name('cart.increase');
+Route::post('/cart/decrease', [CartController::class, 'decrease'])
+    ->middleware(['auth', 'verified'])
+    ->name('cart.decrease');
+Route::post('/cart/remove', [CartController::class, 'remove'])
+    ->middleware(['auth', 'verified'])
+    ->name('cart.remove');
 
 Route::get('/analyze', [AnalyzeController::class, 'index'])
     ->middleware(['auth', 'verified'])

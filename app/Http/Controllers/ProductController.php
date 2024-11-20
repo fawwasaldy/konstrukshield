@@ -16,6 +16,10 @@ class ProductController extends Controller
                 ->orWhere('description', 'like', '%' . $request->search . '%');
         }
 
+        if ($request->has('category') && $request->category != '') {
+            $query->where('category', $request->category);
+        }
+
         $products = $query->paginate($request->get('per_page', 8));
 
         return view('products.index', compact('products'));
