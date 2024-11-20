@@ -18,6 +18,12 @@ class ProductController extends Controller
 
         $products = $query->paginate($request->get('per_page', 8));
 
-        return view('products', compact('products'));
+        return view('products.index', compact('products'));
+    }
+
+    public function show($id)
+    {
+        $product = Product::findOrFail($id);
+        return view('products.show', compact('product'));
     }
 }
