@@ -53,7 +53,7 @@ class AnalyzeController extends Controller
 
         if ($personCount > $helmetCount && $personCount > $vestCount) {
             $message = 'Sepertinya kamu membutuhkan helmet dan vest';
-            $link = null;
+            $link = route('products');
         } elseif ($personCount > $helmetCount) {
             $message = 'Sepertinya kamu membutuhkan helmet';
             $link = route('products', ['category' => 'vest']);
@@ -62,7 +62,7 @@ class AnalyzeController extends Controller
             $link = route('products', ['category' => 'helmet']);
         } else {
             $message = 'Selamat, tempat kerja anda sudah aman!';
-            $link = route('products');
+            $link = null;
         }
 
         return view('analyze.result', compact('decodedImagePath', 'predictions', 'message', 'link', 'personCount', 'helmetCount', 'vestCount'));
