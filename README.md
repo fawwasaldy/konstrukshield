@@ -1,5 +1,5 @@
-div align="center">
-  <img src="![Group 175](https://github.com/user-attachments/assets/f73c02b6-1375-484c-8711-00468a2bc5ad)" alt="Project Logo">
+<div align="center">
+  <img src="/mnt/data/Group 175.png" alt="Project Logo">
 </div>
 
 ## Deskripsi Singkat
