@@ -1,4 +1,12 @@
-![Group 175](https://github.com/user-attachments/assets/553f13ea-022c-4a00-9d18-4c852c9694d1)
+# ![Project Logo](![Group 175](https://github.com/user-attachments/assets/3144cd63-49f3-47ba-a76e-ca25ae09b9cb))
+
+## Deskripsi Singkat
+Platform ecommerce ini menyediakan alat perlindungan diri untuk kerja konstruksi, fitur analisis gambar untuk mengevaluasi tingkat keamanan lingkungan kerja, dan kemudahan berbelanja melalui keranjang belanja yang praktis.
+
+## Pembuat
+- **Nama**: [Nama Anda atau Tim Anda]
+- **Email**: [Email Anda]
+- **LinkedIn/GitHub**: [Tautan profil Anda]
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
