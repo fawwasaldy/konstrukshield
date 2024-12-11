@@ -3,7 +3,9 @@
 </div>
 
 ## StructShield
-Platform ecommerce ini menyediakan alat perlindungan diri untuk kerja konstruksi, fitur analisis gambar untuk mengevaluasi tingkat keamanan lingkungan kerja, dan kemudahan berbelanja melalui keranjang belanja yang praktis.
+ShieldStruct adalah aplikasi E-Commerce inovatif dengan teknologi deteksi objek yang dirancang untuk pengguna Android. Aplikasi ini dibangun menggunakan Laravel, Blade, Flask, dan YOLO11 untuk menghadirkan kemampuan deteksi objek secara real-time yang akurat dan cepat. Dengan fitur ini, pengguna dapat mengunggah gambar untuk mengidentifikasi objek langsung, menjadikan ShieldStruct sebagai alat yang sangat berguna bagi pekerja konstruksi di lapangan agar dapat bekerja dengan lebih aman.
+Selain deteksi real-time, ShieldStruct juga menyediakan fitur jual beli barang perlindungan keamanan konstruksi. Fitur ini sangat membantu, terutama ketika lingkungan kerja terdeteksi berisiko, sehingga pengguna dapat langsung membeli perlengkapan keamanan yang diperlukan melalui platform ShieldStruct.
+ShieldStruct juga menawarkan fitur keranjang belanja yang dirancang untuk mempermudah pengguna dalam mengelola pembelian mereka. Pengguna dapat menambahkan berbagai produk ke keranjang, meninjau daftar barang yang akan dibeli, dan menyelesaikan transaksi dengan langkah-langkah yang sederhana. Fitur ini memberikan pengalaman berbelanja yang praktis dan efisien bagi pengguna.
 
 ## Pembuat
 - **Nama**: Brendan Timothy Mannuel  
