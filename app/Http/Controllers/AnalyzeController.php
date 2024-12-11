@@ -47,6 +47,8 @@ class AnalyzeController extends Controller
         $helmetCount = collect($predictions)->where('class_name', 'Safety-Helmet')->count();
         $vestCount = collect($predictions)->where('class_name', 'Reflective-Jacket')->count();
 
+        $personCount += 2;
+
 //        dd($personCount, $helmetCount, $vestCount);
 
         if ($personCount < $helmetCount && $personCount < $vestCount) {
