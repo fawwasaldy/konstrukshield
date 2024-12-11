@@ -51,17 +51,17 @@ class AnalyzeController extends Controller
 
 //        dd($personCount, $helmetCount, $vestCount);
 
-        if ($personCount < $helmetCount && $personCount < $vestCount) {
-            $message = 'Selamat, tempat kerja anda sudah aman!';
+        if ($personCount > $helmetCount && $personCount > $vestCount) {
+            $message = 'Sepertinya kamu membutuhkan helmet dan vest';
             $link = null;
-        } elseif ($personCount < $helmetCount) {
-            $message = 'Sepertinya kamu membutuhkan vest';
-            $link = route('products', ['category' => 'vest']);
-        } elseif ($personCount < $vestCount) {
+        } elseif ($personCount > $helmetCount) {
             $message = 'Sepertinya kamu membutuhkan helmet';
+            $link = route('products', ['category' => 'vest']);
+        } elseif ($personCount > $vestCount) {
+            $message = 'Sepertinya kamu membutuhkan vest';
             $link = route('products', ['category' => 'helmet']);
         } else {
-            $message = 'Sepertinya kamu membutuhkan helmet dan vest';
+            $message = 'Selamat, tempat kerja anda sudah aman!';
             $link = route('products');
         }
 
