@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://drive.google.com/file/d/1_iUVNzMHvHS0FtGosuUnFHeT-xXpobOe/view?usp=sharing" alt="Project Logo">
+  <img src="https://drive.google.com/uc?id=1_iUVNzMHvHS0FtGosuUnFHeT-xXpobOe" alt="Project Logo">
 </div>
 
 ## Deskripsi Singkat
