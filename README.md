@@ -6,7 +6,7 @@
 Platform ecommerce ini menyediakan alat perlindungan diri untuk kerja konstruksi, fitur analisis gambar untuk mengevaluasi tingkat keamanan lingkungan kerja, dan kemudahan berbelanja melalui keranjang belanja yang praktis.
 
 ## Pembuat
-- **Nama**: Brendan Timothy Mannuel 
+- **Nama**: Brendan Timothy Mannuel  
   **Email**: brendantimothym@gmail.com  
 
 - **Nama**: Fawwas Aldy Nurramdhan Kaisar  
