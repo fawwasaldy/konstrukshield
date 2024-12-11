@@ -34,7 +34,7 @@
             <h2 class="text-2xl font-bold mb-2">Message</h2>
             <p>{{ $message }}</p>
             @if ($link)
-                <a href="{{ $link }}" class="bg-blue-500 text-white px-4 py-2 mt-2 block text-center rounded">Go to Products</a>
+                <a href="{{ $link }}" class="bg-gray-800 text-white px-4 py-2 mt-2 block text-center rounded">Go to Products</a>
             @endif
         </div>
     </div>
