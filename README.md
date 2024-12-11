@@ -2,11 +2,11 @@
   <img src="https://drive.google.com/uc?id=1_iUVNzMHvHS0FtGosuUnFHeT-xXpobOe" alt="Project Logo">
 </div>
 
-## Deskripsi Singkat
+## StructShield
 Platform ecommerce ini menyediakan alat perlindungan diri untuk kerja konstruksi, fitur analisis gambar untuk mengevaluasi tingkat keamanan lingkungan kerja, dan kemudahan berbelanja melalui keranjang belanja yang praktis.
 
 ## Pembuat
-- **Nama**: [Nama Pembuat 1]  
+- **Nama**: Brendan Timothy Mannuel 
   **Email**: [Email Pembuat 1]  
   **LinkedIn/GitHub**: [Tautan profil Pembuat 1]
 
