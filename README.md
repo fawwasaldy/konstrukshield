@@ -1,3 +1,21 @@
+<div align="center">
+  <img src="https://drive.google.com/uc?id=1_iUVNzMHvHS0FtGosuUnFHeT-xXpobOe" alt="Project Logo">
+</div>
+
+## StructShield
+Platform ecommerce ini menyediakan alat perlindungan diri untuk kerja konstruksi, fitur analisis gambar untuk mengevaluasi tingkat keamanan lingkungan kerja, dan kemudahan berbelanja melalui keranjang belanja yang praktis.
+
+## Pembuat
+- **Nama**: Brendan Timothy Mannuel  
+  **Email**: brendantimothym@gmail.com  
+
+- **Nama**: Fawwas Aldy Nurramdhan Kaisar  
+  **Email**: fawwas.aldy2111@gmail.com
+
+- **Nama**: Aditya Situmorang  
+  **Email**: adityasitumorang12345@gmail.com  
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
