@@ -29,7 +29,7 @@ class AnalyzeController extends Controller
 
         try {
             // Send the image to the prediction API with a timeout of 5 seconds
-            $response = Http::timeout(5)->attach(
+            $response = Http::timeout(15)->attach(
                 'file', file_get_contents($request->file('image')->getRealPath()), $request->file('image')->getClientOriginalName()
             )->post('http://127.0.0.1:5000/predict');
 
